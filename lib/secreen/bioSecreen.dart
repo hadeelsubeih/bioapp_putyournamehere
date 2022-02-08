@@ -5,7 +5,9 @@ void main()=>runApp(BioSecreen());
 class BioSecreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
+
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text('Profile'),
@@ -32,6 +34,8 @@ class BioSecreen extends StatelessWidget {
                 radius: 50,
                 backgroundImage: AssetImage('images/hh.jpg'),
               ),
+              SizedBox(height: 5),
+
               Text('HadeelSh',
                 style: TextStyle(
                     fontSize: 20 ,
@@ -40,7 +44,7 @@ class BioSecreen extends StatelessWidget {
                     fontFamily: 'SourceSerifPro'
                 ),
               ),
-              SizedBox(height: 5),
+              SizedBox(height: 10),
               Text('hadeelsh4@gmail.com',
                 style:TextStyle(
                     color: Colors.blueGrey,
@@ -50,16 +54,19 @@ class BioSecreen extends StatelessWidget {
               ),
               Divider(
                 thickness: 1,
-                color: Colors.white,
+                color: Colors.amber,
                 indent: 40,
                 endIndent: 40,
                 height: 30,
+
+
 
               ),
               BioCarde(leadingIcon: Icons.person,
                 title: 'Full Name',
                 subTitle: 'Hadeel Essam Subeih',
                 TreainingIcon: Icons.edit,
+                marginBo: 10,
                 onPressed: (){},
 
               ),
@@ -67,6 +74,8 @@ class BioSecreen extends StatelessWidget {
                 title: 'Course Name',
                 subTitle: 'Flutter',
                 TreainingIcon: Icons.library_books,
+                marginBo: 10,
+
                 onPressed: (){},
 
               ),
@@ -74,6 +83,7 @@ class BioSecreen extends StatelessWidget {
                 title: 'Email',
                 subTitle: 'HadeelSubeih4@gmail.com',
                 TreainingIcon: Icons.send,
+                marginBo: 10,
                 onPressed: (){},
 
               ),
@@ -87,7 +97,7 @@ class BioSecreen extends StatelessWidget {
               Spacer(),
               Padding(
                 padding: const EdgeInsets.only(bottom: 10),
-                child: Text('hADEELSH@'),
+                child: Text('HADEELSH@2000' ,style: TextStyle(color: Colors.blueGrey),),
               ),
            
 

@@ -14,27 +14,32 @@ class BioCarde extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.white,
+      color: Colors.black54,
       elevation: 4,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(30),
         side: BorderSide(color: Colors.amber,width: 1
         ),
       ),
       margin: EdgeInsetsDirectional.only(start: 20,end: 20,bottom: marginBo),
       child: ListTile(
-        leading: Icon(leadingIcon),
+        leading: Icon(leadingIcon,color: Colors.white30,
+        ),
+
         title: Text(
           title,
           style: TextStyle(
+            color: Colors.white,
               fontFamily: 'SourceSerifPro',
               fontWeight: FontWeight.bold),
+
         ),
         subtitle: Text(
           subTitle,
-          style: TextStyle(fontFamily: 'SourceSerifPro'),
+          style: TextStyle( color :Colors.white70,fontFamily: 'SourceSerifPro'),
         ),
         trailing: IconButton(
+          color: Colors.white30,
          // onPressed: () { }
           onPressed:onPressed,
           icon: Icon(TreainingIcon),
