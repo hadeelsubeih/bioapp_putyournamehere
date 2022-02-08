@@ -14,11 +14,11 @@ class BioCarde extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.white10,
+      color: Colors.white,
       elevation: 4,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
-        side: BorderSide(color: Colors.white,width: 1
+        side: BorderSide(color: Colors.amber,width: 1
         ),
       ),
       margin: EdgeInsetsDirectional.only(start: 20,end: 20,bottom: marginBo),

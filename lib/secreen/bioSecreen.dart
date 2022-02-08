@@ -15,9 +15,11 @@ class BioSecreen extends StatelessWidget {
         leading: Icon(
           Icons.arrow_back_ios,
           size:24,
+          color: Colors.amber,
         ),
         actions: [
-          Icon(Icons.more_vert),
+          Icon(Icons.more_vert,color: Colors.amber,
+          ),
         ],
       ),
       body: Stack(
